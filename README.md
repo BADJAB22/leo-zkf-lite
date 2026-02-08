@@ -300,7 +300,7 @@ LEO-ZKF-Lite is licensed under the **MIT License**. See [LICENSE](./LICENSE) for
 
 ## 🙏 Acknowledgments
 
-- **LEO Whitepaper**: Bader Jamal Jabarin (Kadropic Labs)
+- **LEO Whitepaper**: Bader Jamal (Kadropic Labs)
 - **ADMM Algorithm**: Boyd et al. (2010)
 - **Byzantine Fault Tolerance**: Lamport, Castro, Liskov
 - **Zero-Knowledge Proofs**: Ben-Sasson, Chiesa, Groth
@@ -325,4 +325,4 @@ python zkf_lite_engine.py
 
 ---
 
-**Made with ❤️ by the LEO-ZKF-Lite Community**
+**Made with ❤️ by Bader Jamal (Kadropic Labs)**
