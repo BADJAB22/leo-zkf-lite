@@ -96,9 +96,6 @@ def test_fragment_verification():
 
 ## Questions?
 
-Open a discussion or reach out on our community channels:
-- GitHub Discussions
-- Twitter: @LEO_ZKF_Lite
-- Discord: [Join our server]
+Open a discussion or reach out × @baderjamal0
 
 Thank you for making LEO-ZKF-Lite better! 🚀
