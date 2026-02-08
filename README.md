@@ -305,12 +305,6 @@ LEO-ZKF-Lite is licensed under the **MIT License**. See [LICENSE](./LICENSE) for
 - **Byzantine Fault Tolerance**: Lamport, Castro, Liskov
 - **Zero-Knowledge Proofs**: Ben-Sasson, Chiesa, Groth
 
-## 📞 Support & Community
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/leo-zkf-lite/leo-zkf-lite/issues)
-- **Discussions**: [Join our community](https://github.com/leo-zkf-lite/leo-zkf-lite/discussions)
-- **Twitter**: [@LEO_ZKF_Lite](https://twitter.com/leo_zkf_lite)
-- **Discord**: [Join our server](https://discord.gg/leo-zkf-lite)
 
 ## 🚀 Get Started Now
 
