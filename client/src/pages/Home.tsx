@@ -47,17 +47,17 @@ export default function Home() {
       <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-lg flex items-center justify-center">
               <Zap className="w-6 h-6 text-white" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-slate-900">LEO-ZKF-Lite</h1>
-              <p className="text-xs text-slate-500">Trustless AI Verifier</p>
+              <p className="text-xs text-slate-500">By Bader Jamal Jabarin</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-              Open Source
+            <Badge variant="outline" className="bg-red-50 text-red-700 border-red-200">
+              Revolutionary MVP
             </Badge>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function Home() {
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-3 mb-8">
             <TabsTrigger value="demo">Interactive Demo</TabsTrigger>
-            <TabsTrigger value="about">About LEO-ZKF</TabsTrigger>
+            <TabsTrigger value="about">About Bader's ZKF</TabsTrigger>
             <TabsTrigger value="docs">Documentation</TabsTrigger>
           </TabsList>
 
@@ -77,11 +77,11 @@ export default function Home() {
             <Card className="border-0 shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-blue-600" />
+                  <Shield className="w-5 h-5 text-red-600" />
                   Decentralized Decision Verification
                 </CardTitle>
                 <CardDescription>
-                  Simulate a distributed network verifying an AI decision with Byzantine resilience
+                  Simulate a distributed network verifying an AI decision with Bader's Byzantine resilience protocol
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -89,7 +89,7 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-2">
-                      Network Size: <span className="font-bold text-blue-600">{networkSize}</span>
+                      Network Size: <span className="font-bold text-red-600">{networkSize}</span>
                     </label>
                     <input
                       type="range"
@@ -103,7 +103,7 @@ export default function Home() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-2">
-                      Byzantine Nodes: <span className="font-bold text-red-600">{byzantineNodes}</span>
+                      Byzantine Nodes: <span className="font-bold text-slate-600">{byzantineNodes}</span>
                     </label>
                     <input
                       type="range"
@@ -146,7 +146,7 @@ export default function Home() {
                   onClick={runVerification}
                   disabled={isVerifying}
                   size="lg"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+                  className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800"
                 >
                   {isVerifying ? (
                     <>
@@ -177,9 +177,9 @@ export default function Home() {
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-                        <div className="text-xs text-blue-600 font-medium mb-1">Verification Score</div>
-                        <div className="text-2xl font-bold text-blue-900">
+                      <div className="bg-red-50 rounded-lg p-3 border border-red-200">
+                        <div className="text-xs text-red-600 font-medium mb-1">Verification Score</div>
+                        <div className="text-2xl font-bold text-red-900">
                           {(result.verificationScore * 100).toFixed(0)}%
                         </div>
                       </div>
@@ -225,29 +225,29 @@ export default function Home() {
           <TabsContent value="about" className="space-y-6">
             <Card className="border-0 shadow-lg">
               <CardHeader>
-                <CardTitle>What is LEO-ZKF-Lite?</CardTitle>
+                <CardTitle>What is Bader's ZKF-Lite?</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 text-slate-700">
                 <p>
-                  LEO-ZKF-Lite is an open-source implementation of the Distributed Zero-Knowledge Fragmentation (ZKF) layer from the LEO whitepaper. It enables real-time verification of AI decisions across decentralized networks without revealing underlying data or models.
+                  LEO-ZKF-Lite is a revolutionary open-source implementation of the Distributed Zero-Knowledge Fragmentation (ZKF) layer. Developed by Bader Jamal Jabarin, it enables real-time verification of AI decisions across decentralized networks without revealing underlying data or models.
                 </p>
                 <div className="space-y-3">
                   <div className="flex gap-3">
-                    <Zap className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Zap className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-semibold text-slate-900">Sub-Millisecond Verification</h4>
                       <p className="text-sm text-slate-600">Verify AI decisions in microseconds, not seconds</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
-                    <Shield className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Shield className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-semibold text-slate-900">Byzantine Resilient</h4>
                       <p className="text-sm text-slate-600">Tolerates up to 1/3 malicious nodes in the network</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
-                    <Network className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Network className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <h4 className="font-semibold text-slate-900">Privacy-Preserving</h4>
                       <p className="text-sm text-slate-600">No raw data or models are exposed during verification</p>
@@ -271,7 +271,7 @@ export default function Home() {
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-2">Installation</h4>
                   <pre className="bg-slate-900 text-slate-100 p-3 rounded-lg overflow-x-auto text-sm">
-                    <code>git clone https://github.com/leo-zkf-lite/leo-zkf-lite.git
+                    <code>git clone https://github.com/BADJAB22/leo-zkf-lite.git
 cd leo-zkf-lite
 pip install -r requirements.txt</code>
                   </pre>
@@ -281,7 +281,7 @@ pip install -r requirements.txt</code>
                   <pre className="bg-slate-900 text-slate-100 p-3 rounded-lg overflow-x-auto text-sm">
                     <code>{`from zkf_lite_engine import ZKFLiteEngine
 
-engine = ZKFLiteEngine(node_id="leo-node-1")
+engine = ZKFLiteEngine(node_id="bader-node-1")
 fragment = engine.create_fragment(
     decision="APPROVE",
     confidence=0.92,
